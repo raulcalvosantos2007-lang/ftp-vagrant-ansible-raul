@@ -1,0 +1,9 @@
+PRUEBA 4 - VIRTUALBOX
+Fecha: 2026-11-22 12:56:25
+Comando: Get-Command VBoxManage; si no esta en PATH, ejecutar C:\Program Files\Oracle\VirtualBox\VBoxManage.exe --version
+Salida:
+VBoxManage: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe
+Version: 7.2.6r172322
+Estado: OK
+Captura: OK - evidencias/capturas/20261122_171322-entorno_comprobaciones.png
+EXIT_CODE=0

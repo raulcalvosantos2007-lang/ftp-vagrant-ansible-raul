@@ -1,0 +1,8 @@
+FECHA: 2026-11-22T15:49:54+01:00
+COMANDO: comprobación estructural de hashes y auth.log
+bash: line 23: warning: here-document at line 1 delimited by end-of-file (wanted `FIN_DIAGnset')
+  File "<stdin>", line 6
+    valor = valor.strip().strip(')
+                                ^
+SyntaxError: unterminated string literal (detected at line 6)
+EXIT_CODE=1

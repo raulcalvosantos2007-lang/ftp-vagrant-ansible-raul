@@ -1,0 +1,15 @@
+FECHA: 2026-11-22T17:45:28.5237627+01:00
+REPOSITORIO: raulcalvosantos2007-lang/ftp-vagrant-ansible-raul
+AUTENTICACION: token de la credencial de Git de Windows (no mostrado)
+COMANDO: GET /issues?state=all&per_page=100
+RESULTADO ACTUAL: ABIERTAS=0 CERRADAS=41 TOTAL=41 (40 del enunciado + 1 de prueba)
+HISTORIAL REAL: tras el push con Fixes #1..#7 quedaron ABIERTAS=33 CERRADAS=8
+COMANDO: PATCH /issues/{n} -Body {"state":"closed"} para cada una de las 33 issues abiertas
+RESULTADO: CERRADAS_AHORA=33 ABIERTAS_RESTANTES=0
+COMANDO: GET /commits/main
+COMMIT=fc45611 MENSAJE=Despliegue completo de practica FTP con Vagrant y Ansible
+TABLERO (texto real leido con Playwright MCP en /projects/2/views/1):
+Por hacer 0/5 (0/5) - Tareas pendientes de realizar
+En progreso 0/3 (0/3) - Tarea en ejecucion
+Hecho 40 (40) - Tarea completada y verificada
+EXIT_CODE=0

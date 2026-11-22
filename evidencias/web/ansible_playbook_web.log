@@ -1,0 +1,31 @@
+FECHA: 2026-11-22T15:47:21+01:00
+
+playbook: web/web.yml
+
+playbook: ftp/ftp.yml
+COMANDO: vagrant ssh ansible -c "ansible-playbook web/web.yml"
+
+PLAY [Provisionar el servidor web] *********************************************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [negocio][0m
+
+TASK [Actualizar la lista de paquetes con tiempos acotados] ********************
+[0;32mok: [negocio][0m
+
+TASK [Instalar Apache] *********************************************************
+[0;33mchanged: [negocio][0m
+
+TASK [Publicar la página de prueba] ********************************************
+[0;33mchanged: [negocio][0m
+
+TASK [Habilitar e iniciar Apache] **********************************************
+[0;32mok: [negocio][0m
+
+RUNNING HANDLER [Reiniciar Apache] *********************************************
+[0;33mchanged: [negocio][0m
+
+PLAY RECAP *********************************************************************
+[0;33mnegocio[0m                    : [0;32mok=6   [0m [0;33mchanged=3   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+EXIT_CODE=0

@@ -1,0 +1,40 @@
+FECHA: 2026-11-22T15:09:32+01:00
+COMANDO: vagrant ssh ansible -c "ansible-playbook dns/dns.yml"
+
+PLAY [Provisionar el servidor DNS] *********************************************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [dns][0m
+
+TASK [Instalar BIND] ***********************************************************
+[0;33mchanged: [dns][0m
+
+TASK [Copiar opciones de BIND] *************************************************
+[0;33mchanged: [dns][0m
+
+TASK [Copiar definición de zonas] **********************************************
+[0;33mchanged: [dns][0m
+
+TASK [Copiar archivos de zona] *************************************************
+[0;33mchanged: [dns] => (item=db.raul.test)[0m
+[0;33mchanged: [dns] => (item=db.192.168.57)[0m
+
+TASK [Validar configuración de BIND] *******************************************
+[0;32mok: [dns][0m
+
+TASK [Validar zona directa] ****************************************************
+[0;32mok: [dns][0m
+
+TASK [Validar zona inversa] ****************************************************
+[0;32mok: [dns][0m
+
+TASK [Habilitar e iniciar BIND] ************************************************
+[0;32mok: [dns][0m
+
+RUNNING HANDLER [Reiniciar BIND] ***********************************************
+[0;33mchanged: [dns][0m
+
+PLAY RECAP *********************************************************************
+[0;33mdns[0m                        : [0;32mok=10  [0m [0;33mchanged=5   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+EXIT_CODE=0

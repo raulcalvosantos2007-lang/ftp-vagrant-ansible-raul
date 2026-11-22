@@ -1,0 +1,43 @@
+---
+- name: Provisionar el servidor web
+  hosts: negocio
+  become: true
+
+  tasks:
+    # En esta VM se observó una conexión HTTPS de apt colgada indefinidamente.
+    # Se acotan los tiempos de espera para que el playbook nunca se quede bloqueado.
+    - name: Actualizar la lista de paquetes con tiempos acotados
+      ansible.builtin.shell: >-
+        timeout 240 apt-get update
+        -o Acquire::Retries=1
+        -o Acquire::http::Timeout=15
+        -o Acquire::https::Timeout=15
+        -o Acquire::ForceIPv4=true
+      changed_when: false
+
+    - name: Instalar Apache
+      ansible.builtin.apt:
+        name: apache2
+        state: present
+        update_cache: false
+
+    - name: Publicar la página de prueba
+      ansible.builtin.copy:
+        src: files/index.html
+        dest: /var/www/html/index.html
+        owner: root
+        group: root
+        mode: "0644"
+      notify: Reiniciar Apache
+
+    - name: Habilitar e iniciar Apache
+      ansible.builtin.service:
+        name: apache2
+        enabled: true
+        state: started
+
+  handlers:
+    - name: Reiniciar Apache
+      ansible.builtin.service:
+        name: apache2
+        state: restarted

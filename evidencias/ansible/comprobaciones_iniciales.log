@@ -1,0 +1,34 @@
+FECHA: 2026-11-22T15:02:29+01:00
+COMANDO: ansible --version | head -n 2
+ansible [core 2.14.18]
+  config file = /home/vagrant/ansible.cfg
+EXIT_CODE=0
+COMANDO: ansible-inventory --graph
+@all:
+  |--@ungrouped:
+  |  |--dns
+  |  |--negocio
+EXIT_CODE=0
+COMANDO: ansible all -m ping
+[0;32mnegocio | SUCCESS => {[0m
+[0;32m    "ansible_facts": {[0m
+[0;32m        "discovered_interpreter_python": "/usr/bin/python3"[0m
+[0;32m    },[0m
+[0;32m    "changed": false,[0m
+[0;32m    "ping": "pong"[0m
+[0;32m}[0m
+[0;32mdns | SUCCESS => {[0m
+[0;32m    "ansible_facts": {[0m
+[0;32m        "discovered_interpreter_python": "/usr/bin/python3"[0m
+[0;32m    },[0m
+[0;32m    "changed": false,[0m
+[0;32m    "ping": "pong"[0m
+[0;32m}[0m
+EXIT_CODE=0
+COMANDO: ansible all -b -a "uptime"
+[0;33mnegocio | CHANGED | rc=0 >>[0m
+[0;33m 14:02:59 up 4 min,  2 users,  load average: 0.00, 0.03, 0.00[0m
+[0;33mdns | CHANGED | rc=0 >>[0m
+[0;33m 14:02:59 up 5 min,  2 users,  load average: 0.00, 0.04, 0.02[0m
+EXIT_CODE=0
+TODAS LAS COMPROBACIONES EXITOSAS

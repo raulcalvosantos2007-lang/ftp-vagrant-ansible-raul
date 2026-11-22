@@ -1,0 +1,38 @@
+FECHA: 2026-11-22T15:39:44+01:00
+COMANDO: curl.exe -sS https://api.github.com/users/raulcalvosantos2007-lang
+{
+  "login": "raulcalvosantos2007-lang",
+  "id": 239182899,
+  "node_id": "U_kgDODkGkMw",
+  "avatar_url": "https://avatars.githubusercontent.com/u/239182899?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/raulcalvosantos2007-lang",
+  "html_url": "https://github.com/raulcalvosantos2007-lang",
+  "followers_url": "https://api.github.com/users/raulcalvosantos2007-lang/followers",
+  "following_url": "https://api.github.com/users/raulcalvosantos2007-lang/following{/other_user}",
+  "gists_url": "https://api.github.com/users/raulcalvosantos2007-lang/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/raulcalvosantos2007-lang/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/raulcalvosantos2007-lang/subscriptions",
+  "organizations_url": "https://api.github.com/users/raulcalvosantos2007-lang/orgs",
+  "repos_url": "https://api.github.com/users/raulcalvosantos2007-lang/repos",
+  "events_url": "https://api.github.com/users/raulcalvosantos2007-lang/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/raulcalvosantos2007-lang/received_events",
+  "type": "User",
+  "user_view_type": "public",
+  "site_admin": false,
+  "name": "Raul Calvo Santos",
+  "company": null,
+  "blog": "",
+  "location": "Granada",
+  "email": null,
+  "hireable": null,
+  "bio": null,
+  "twitter_username": null,
+  "public_repos": 3,
+  "public_gists": 0,
+  "followers": 0,
+  "following": 0,
+  "created_at": "2025-10-20T14:58:18Z",
+  "updated_at": "2026-10-15T11:06:07Z"
+}
+EXIT_CODE=0

@@ -1,0 +1,8 @@
+PRUEBA 2 - RUTA DEL PROYECTO
+Fecha: 2026-11-22 12:56:25
+Comando: (Get-Location).Path
+Salida:
+Ruta actual: C:\Users\Raulcs007\Desktop\practicaFTP
+Estado: OK
+Captura: OK - evidencias/capturas/20261122_171322-entorno_comprobaciones.png
+EXIT_CODE=0

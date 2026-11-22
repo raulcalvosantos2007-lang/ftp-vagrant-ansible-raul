@@ -1,0 +1,13 @@
+FECHA: 2026-11-22T18:12:53.2424040+01:00
+COMANDO: vagrant ssh ansible -c "bash dns/tests/pruebas_dns.sh"
+OK   A dns.raul.test                            -> 192.168.57.5
+OK   A ansible.raul.test                        -> 192.168.57.6
+OK   A negocio.raul.test                        -> 192.168.57.7
+OK   CNAME www.raul.test                        -> negocio.raul.test.
+OK   CNAME ftp.raul.test                        -> negocio.raul.test.
+OK   PTR 192.168.57.5                           -> dns.raul.test.
+OK   PTR 192.168.57.6                           -> ansible.raul.test.
+OK   PTR 192.168.57.7                           -> negocio.raul.test.
+
+Todas las comprobaciones DNS han terminado correctamente.
+EXIT_CODE=0

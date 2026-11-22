@@ -1,0 +1,22 @@
+# Vagrant y claves privadas generadas
+.vagrant/
+private_keys/
+*.key
+*.pem
+
+# Password maestra local de Ansible Vault (nunca subir)
+vault_pass.txt
+.vault_pass.txt
+
+# Temporales de Playwright y del sistema
+.playwright-mcp/
+Thumbs.db
+desktop.ini
+
+# Enunciado original del profesor: contiene credenciales de ejemplo y no es codigo de la entrega
+ftp-vagrant-ansible-nodo-controlador/
+
+# Temporales de edición
+*~
+*.swp
+*.tmp

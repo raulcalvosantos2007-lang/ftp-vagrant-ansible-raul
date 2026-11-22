@@ -1,0 +1,167 @@
+FECHA: 2026-11-22T15:46:07+01:00
+COMANDO: timeout 120 sudo apt-get update -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 -o Acquire::ForceIPv4=true
+
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Working]
+0% [Connecting to debian.map.fastly.net]
+                                        
+Get:1 https://security.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+
+0% [Connecting to debian.map.fastly.net] [1 InRelease 0 B/34.8 kB 0%]
+                                                                     
+0% [Connecting to debian.map.fastly.net]
+0% [Connecting to debian.map.fastly.net]
+                                        
+Get:2 https://security.debian.org/debian-security bookworm-security/main Sources [299 kB]
+
+0% [Connecting to debian.map.fastly.net]
+                                        
+Get:3 https://security.debian.org/debian-security bookworm-security/main amd64 Packages [378 kB]
+
+                                        
+Get:4 https://security.debian.org/debian-security bookworm-security/main Translation-en [237 kB]
+
+0% [Connecting to debian.map.fastly.net]
+0% [2 Sources store 8026 kB] [Connecting to debian.map.fastly.net]
+                                                                  
+0% [Connecting to debian.map.fastly.net]
+0% [3 Packages store 2523 kB] [Connecting to debian.map.fastly.net]
+                                                                   
+0% [Connecting to debian.map.fastly.net]
+0% [4 Translation-en store 1679 kB] [Connecting to debian.map.fastly.net]
+                                                                         
+0% [Connecting to debian.map.fastly.net]
+0% [Connecting to debian.map.fastly.net]
+0% [Connecting to debian.map.fastly.net]
+0% [Connecting to debian.map.fastly.net]
+0% [Connecting to debian.map.fastly.net]
+0% [Connecting to debian.map.fastly.net]                            149 kB/s 0s
+                                                                               
+Get:5 https://deb.debian.org/debian bookworm InRelease [151 kB]
+
+0% [5 InRelease 0 B/151 kB 0%]                                      149 kB/s 1s
+0% [Working]                                                        149 kB/s 0s
+                                                                               
+Get:6 https://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+
+0% [Waiting for headers]                                            149 kB/s 0s
+                                                                               
+Get:7 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+
+0% [Working]                                                        149 kB/s 0s
+0% [Working]                                                  149 kB/s 2min 43s
+                                                                               
+Get:8 https://deb.debian.org/debian bookworm/main Sources [9492 kB]
+
+0% [8 Sources 29.4 kB/9492 kB 0%]                             149 kB/s 2min 43s
+0% [Working]                                                  149 kB/s 1min 40s
+0% [8 Sources store 0 B]                                      149 kB/s 1min 40s
+                                                                               
+Get:9 https://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+
+0% [8 Sources store 0 B] [9 Packages 32.8 kB/8790 kB 0%]      149 kB/s 1min 39s
+0% [8 Sources store 0 B] [9 Packages 6781 kB/8790 kB 77%]          149 kB/s 54s
+0% [8 Sources store 0 B]                                           149 kB/s 41s
+                                                                               
+Get:10 https://deb.debian.org/debian bookworm/main Translation-en [6107 kB]
+
+0% [8 Sources store 0 B] [10 Translation-en 0 B/6107 kB 0%]        149 kB/s 41s
+0% [8 Sources store 0 B]                                            149 kB/s 0s
+                                                                               
+Get:11 https://deb.debian.org/debian bookworm-updates/main Sources [3288 B]
+
+0% [8 Sources store 0 B] [11 Sources 3288 B/3288 B 100%]            149 kB/s 0s
+                                                                               
+Get:12 https://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+
+0% [8 Sources store 0 B] [Waiting for headers]                      149 kB/s 0s
+                                                                               
+Get:13 https://deb.debian.org/debian bookworm-updates/main Translation-en [5448 B]
+
+0% [8 Sources store 0 B] [13 Translation-en 0 B/5448 B 0%]          149 kB/s 0s
+0% [8 Sources store 0 B]                                            149 kB/s 0s
+88% [8 Sources store 0 B]                                           149 kB/s 5s
+                                                                               
+Get:14 https://deb.debian.org/debian bookworm-backports/main Sources [319 kB]
+
+88% [8 Sources store 0 B] [14 Sources 0 B/319 kB 0%]                149 kB/s 5s
+89% [8 Sources store 0 B]                                           149 kB/s 3s
+                                                                               
+Get:15 https://deb.debian.org/debian bookworm-backports/main amd64 Packages [300 kB]
+
+90% [8 Sources store 0 B] [Waiting for headers]                     149 kB/s 1s
+                                                                               
+Get:16 https://deb.debian.org/debian bookworm-backports/main Translation-en [252 kB]
+
+90% [8 Sources store 0 B] [16 Translation-en 0 B/252 kB 0%]         149 kB/s 1s
+91% [8 Sources store 0 B]                                           149 kB/s 0s
+92% [Working]                                                       149 kB/s 0s
+92% [9 Packages store 0 B]                                          149 kB/s 0s
+92% [9 Packages store 0 B]                                          149 kB/s 0s
+93% [Working]                                                       149 kB/s 0s
+93% [10 Translation-en store 0 B]                                   149 kB/s 0s
+93% [10 Translation-en store 0 B]                                   149 kB/s 0s
+94% [Working]                                                       149 kB/s 0s
+94% [11 Sources store 0 B]                                          149 kB/s 0s
+95% [Working]                                                       149 kB/s 0s
+95% [12 Packages store 0 B]                                         149 kB/s 0s
+96% [Working]                                                       149 kB/s 0s
+96% [13 Translation-en store 0 B]                                   149 kB/s 0s
+97% [Working]                                                       149 kB/s 0s
+97% [14 Sources store 0 B]                                          149 kB/s 0s
+98% [Working]                                                       149 kB/s 0s
+98% [15 Packages store 0 B]                                         149 kB/s 0s
+99% [Working]                                                       149 kB/s 0s
+99% [16 Translation-en store 0 B]                                   149 kB/s 0s
+100% [Working]                                                      149 kB/s 0s
+                                                                               
+Fetched 25.5 MB in 10s (2640 kB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 55%
+
+Reading package lists... 55%
+
+Reading package lists... 91%
+
+Reading package lists... 91%
+
+Reading package lists... 92%
+
+Reading package lists... 94%
+
+Reading package lists... 94%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 98%
+
+Reading package lists... 98%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... Done
+
+EXIT_CODE=0

@@ -1,0 +1,15 @@
+options {
+    directory "/var/cache/bind";
+
+    // Escucha solo en localhost y en la IP de la red de prácticas.
+    listen-on port 53 { 127.0.0.1; 192.168.57.5; };
+    listen-on-v6 { none; };
+
+    // Recursión únicamente para el propio servidor y la red privada.
+    recursion yes;
+    allow-recursion { localhost; 192.168.57.0/24; };
+    allow-query { localhost; 192.168.57.0/24; };
+
+    dnssec-validation no;
+    auth-nxdomain no;
+};

@@ -1,0 +1,11 @@
+FECHA: 2026-11-22T15:59:54+01:00
+COMANDO: vagrant ssh ansible -c "curl -fsS http://www.raul.test/"
+<!doctype html>
+<html lang='es'>
+<head><meta charset='utf-8'><title>Servidor web del proyecto</title></head>
+<body>
+<h1>Servidor web de raul.test</h1>
+<p>Pagina subida por ana mediante FTPS explicito.</p>
+</body>
+</html>
+EXIT_CODE=0

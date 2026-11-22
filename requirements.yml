@@ -1,0 +1,5 @@
+---
+collections:
+  # 2.26.9 es compatible con ansible-core 2.14 incluido en Debian Bookworm.
+  - name: community.crypto
+    version: 2.26.9

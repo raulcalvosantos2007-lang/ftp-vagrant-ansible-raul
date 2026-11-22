@@ -1,0 +1,9 @@
+FECHA: 2026-11-22T18:13:21.8132577+01:00
+COMANDO: ansible-playbook --syntax-check de dns, web y ftp desde /home/vagrant (con vault password file local)
+
+playbook: /vagrant/dns/dns.yml
+
+playbook: /vagrant/web/web.yml
+
+playbook: /vagrant/ftp/ftp.yml
+EXIT_CODE=0

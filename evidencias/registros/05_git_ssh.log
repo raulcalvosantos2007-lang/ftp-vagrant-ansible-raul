@@ -1,0 +1,9 @@
+PRUEBA 5 - GIT Y SSH
+Fecha: 2026-11-22 12:56:25
+Comando: git --version; ssh -V (via cmd /c 2>&1)
+Salida:
+git version 2.56.0.windows.2
+OpenSSH_for_Windows_9.5p2, LibreSSL 3.8.2
+Estado: OK
+Captura: OK - evidencias/capturas/20261122_171322-entorno_comprobaciones.png
+EXIT_CODE=0

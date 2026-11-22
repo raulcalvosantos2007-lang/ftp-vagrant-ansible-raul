@@ -1,0 +1,9 @@
+FECHA: 2026-11-22T15:01:56+01:00
+COMANDO: vagrant ssh ansible -c "ansible-galaxy collection install -r requirements.yml"
+Starting galaxy collection install process
+Process install dependency map
+|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\Starting collection install process
+|Downloading https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/community-crypto-3.5.1.tar.gz to /home/vagrant/.ansible/tmp/ansible-local-40175bvxc7_4/tmpprgozggu/community-crypto-3.5.1-pwn88qq5
+/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/-\|/Installing 'community.crypto:3.5.1' to '/home/vagrant/.ansible/collections/ansible_collections/community/crypto'
+-\|/-community.crypto:3.5.1 was installed successfully
+EXIT_CODE=0

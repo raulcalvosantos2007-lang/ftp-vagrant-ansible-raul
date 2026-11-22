@@ -1,0 +1,18 @@
+FECHA: 2026-11-22T15:49:18+01:00
+COMANDO: vagrant ssh negocio -c "systemctl is-active vsftpd; vsftpd -v 2>&1; echo '--- opciones relevantes ---'; grep -E '^(allow_writeable_chroot|seccomp_sandbox|force_local|require_ssl|pasv_address|rsa_)' /etc/vsftpd.conf; echo '--- certificado ---'; openssl x509 -in /etc/ssl/ftp/raul.test.crt -noout -subject -ext subjectAltName 2>&1"
+active
+bash: line 1: vsftpd: command not found
+--- opciones relevantes ---
+seccomp_sandbox=NO
+allow_writeable_chroot=YES
+force_local_logins_ssl=YES
+force_local_data_ssl=YES
+require_ssl_reuse=NO
+rsa_cert_file=/etc/ssl/ftp/raul.test.crt
+rsa_private_key_file=/etc/ssl/ftp/raul.test.key
+pasv_address=192.168.57.7
+--- certificado ---
+subject=O = Practica DAW Raul, CN = ftp.raul.test
+X509v3 Subject Alternative Name: 
+    DNS:ftp.raul.test, DNS:raul.test, DNS:www.raul.test
+EXIT_CODE=0

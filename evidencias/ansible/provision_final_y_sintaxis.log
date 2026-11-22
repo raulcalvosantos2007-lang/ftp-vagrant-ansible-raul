@@ -1,0 +1,75 @@
+FECHA: 2026-11-22T15:07:55+01:00
+COMANDO: vagrant provision ansible
+==> ansible: Running provisioner: shell...
+    ansible: Running: C:/Users/RAULCS~1/AppData/Local/Temp/vagrant-shell20261122-15296-de49o4.sh
+    ansible: + apt-get update
+    ansible: Hit:1 https://deb.debian.org/debian bookworm InRelease
+    ansible: Hit:2 https://security.debian.org/debian-security bookworm-security InRelease
+    ansible: Hit:3 https://deb.debian.org/debian bookworm-updates InRelease
+    ansible: Hit:4 https://deb.debian.org/debian bookworm-backports InRelease
+    ansible: Reading package lists...
+    ansible: + apt-get install -y ansible ansible-lint whois dnsutils
+    ansible: Reading package lists...
+    ansible: Building dependency tree...
+    ansible: Reading state information...
+    ansible: ansible is already the newest version (7.7.0+dfsg-3+deb12u1).
+    ansible: ansible-lint is already the newest version (6.13.1-1).
+    ansible: whois is already the newest version (5.5.17).
+    ansible: dnsutils is already the newest version (1:9.18.49-1~deb12u3).
+    ansible: 0 upgraded, 0 newly installed, 0 to remove and 98 not upgraded.
+    ansible: + mkdir -p ./private_keys/dns ./private_keys/negocio
+    ansible: + cp -vf /vagrant/.vagrant/machines/dns/virtualbox/private_key ./private_keys/dns.key.rsa
+    ansible: '/vagrant/.vagrant/machines/dns/virtualbox/private_key' -> './private_keys/dns.key.rsa'
+    ansible: + cp -vf /vagrant/.vagrant/machines/negocio/virtualbox/private_key ./private_keys/negocio.key.rsa
+    ansible: '/vagrant/.vagrant/machines/negocio/virtualbox/private_key' -> './private_keys/negocio.key.rsa'
+    ansible: + chown vagrant:vagrant ./private_keys/dns ./private_keys/dns.key.rsa ./private_keys/negocio ./private_keys/negocio.key.rsa
+    ansible: + chmod 600 ./private_keys/dns ./private_keys/dns.key.rsa ./private_keys/negocio ./private_keys/negocio.key.rsa
+    ansible: + cp -vf /vagrant/ansible.cfg .
+    ansible: '/vagrant/ansible.cfg' -> './ansible.cfg'
+    ansible: + chown vagrant:vagrant ./ansible.cfg
+    ansible: + cp -vf /vagrant/inventory.yml .
+    ansible: '/vagrant/inventory.yml' -> './inventory.yml'
+    ansible: + chown vagrant:vagrant ./inventory.yml
+    ansible: + cp -vf /vagrant/requirements.yml .
+    ansible: '/vagrant/requirements.yml' -> './requirements.yml'
+    ansible: + chown vagrant:vagrant ./requirements.yml
+    ansible: + cp -vrf /vagrant/dns .
+    ansible: '/vagrant/dns/dns.yml' -> './dns/dns.yml'
+    ansible: '/vagrant/dns/files/db.192.168.57' -> './dns/files/db.192.168.57'
+    ansible: '/vagrant/dns/files/db.raul.test' -> './dns/files/db.raul.test'
+    ansible: '/vagrant/dns/files/named.conf.local' -> './dns/files/named.conf.local'
+    ansible: '/vagrant/dns/files/named.conf.options' -> './dns/files/named.conf.options'
+    ansible: '/vagrant/dns/tests/pruebas_dns.sh' -> './dns/tests/pruebas_dns.sh'
+    ansible: + chown -R vagrant:vagrant ./dns
+    ansible: + cp -vrf /vagrant/web .
+    ansible: '/vagrant/web/files/index.html' -> './web/files/index.html'
+    ansible: '/vagrant/web/tests/prueba_web.sh' -> './web/tests/prueba_web.sh'
+    ansible: '/vagrant/web/web.yml' -> './web/web.yml'
+    ansible: + chown -R vagrant:vagrant ./web
+    ansible: + cp -vrf /vagrant/ftp .
+    ansible: '/vagrant/ftp/files/vsftpd.chroot_list' -> './ftp/files/vsftpd.chroot_list'
+    ansible: '/vagrant/ftp/files/vsftpd.conf' -> './ftp/files/vsftpd.conf'
+    ansible: '/vagrant/ftp/ftp.yml' -> './ftp/ftp.yml'
+    ansible: '/vagrant/ftp/tests/prueba_ftp.py' -> './ftp/tests/prueba_ftp.py'
+    ansible: '/vagrant/ftp/vars/vault.yml' -> './ftp/vars/vault.yml'
+    ansible: '/vagrant/ftp/vars/vault.yml.example' -> './ftp/vars/vault.yml.example'
+    ansible: + chown -R vagrant:vagrant ./ftp
+    ansible: + cp -vf /vagrant/vault_pass.txt ./.vault_pass.txt
+    ansible: '/vagrant/vault_pass.txt' -> './.vault_pass.txt'
+    ansible: + chown vagrant:vagrant ./.vault_pass.txt
+    ansible: + chmod 600 ./.vault_pass.txt
+    ansible: + sudo -u vagrant env HOME=/home/vagrant ansible-galaxy collection install -r requirements.yml
+    ansible: Starting galaxy collection install process
+    ansible: Nothing to do. All requested collections are already installed. If you want to reinstall them, consider using `--force`.
+COMANDO: ansible-playbook --syntax-check dns/dns.yml
+
+playbook: dns/dns.yml
+EXIT_CODE=0
+COMANDO: ansible-playbook --syntax-check web/web.yml
+
+playbook: web/web.yml
+EXIT_CODE=0
+COMANDO: ansible-playbook --syntax-check ftp/ftp.yml
+[1;35m[WARNING]: Collection community.crypto does not support Ansible version 2.14.18[0m
+[0;31mERROR! Attempting to decrypt but no vault secrets found[0m
+EXIT_CODE=1

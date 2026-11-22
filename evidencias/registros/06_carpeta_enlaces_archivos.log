@@ -1,0 +1,11 @@
+PRUEBA 6 - CARPETA CON ENLACES Y ARCHIVOS
+Fecha: 2026-11-22 12:56:25
+Comando: Test-Path -LiteralPath ftp-vagrant-ansible-nodo-controlador; Get-ChildItem -Recurse -File; contar href/src en el HTML
+Salida:
+Carpeta: C:\Users\Raulcs007\Desktop\practicaFTP\ftp-vagrant-ansible-nodo-controlador
+Existe como carpeta: True
+Archivos: 3
+Enlaces HTML: href=42, src=1
+Estado: OK
+Captura: OK - evidencias/capturas/20261122_171322-entorno_comprobaciones.png
+EXIT_CODE=0

@@ -1,0 +1,8 @@
+PRUEBA 3 - VAGRANT
+Fecha: 2026-11-22 12:56:25
+Comando: vagrant --version
+Salida:
+Vagrant 2.4.9
+Estado: OK
+Captura: OK - evidencias/capturas/20261122_171322-entorno_comprobaciones.png
+EXIT_CODE=0

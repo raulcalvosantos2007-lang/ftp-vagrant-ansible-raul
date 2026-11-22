@@ -1,0 +1,47 @@
+��CAMPO: FECHA=2026-11-22T17:10:26.7697995+01:00
+COMANDO: nslookup www.raul.test
+nslookup.exe : *** UnKnown no encuentra www.raul.test: Non-existent domain
+En l�nea: 6 Car�cter: 1
++ & nslookup www.raul.test *>&1 | Tee-Object -FilePath $log -Append
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (*** UnKnown no ...existent domain:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Servidor:  UnKnown
+Address:  46.6.113.34
+
+EXIT_CODE=0
+COMANDO: curl.exe -i http://www.raul.test/
+curl.exe :   % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+En l�nea: 9 Car�cter: 1
++ & curl.exe -i --max-time 15 http://www.raul.test/ *>&1 | Tee-Object - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ... Time   Current:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0
+100    221 100    221   0      0  12914      0                              0
+100    221 100    221   0      0  12798      0                              0
+100    221 100    221   0      0  12728      0                              0
+HTTP/1.1 200 OK
+Date: Sun, 22 Nov 2026 16:10:26 GMT
+Server: Apache/2.4.71 (Debian)
+Last-Modified: Sun, 22 Nov 2026 14:59:48 GMT
+ETag: "dd-660deba8a7260"
+Accept-Ranges: bytes
+Content-Length: 221
+Vary: Accept-Encoding
+Content-Type: text/html
+
+<!doctype html>
+<html lang='es'>
+<head><meta charset='utf-8'><title>Servidor web del proyecto</title></head>
+<body>
+<h1>Servidor web de raul.test</h1>
+<p>Pagina subida por ana mediante FTPS explicito.</p>
+</body>
+</html>
+EXIT_CODE=0

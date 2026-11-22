@@ -1,0 +1,64 @@
+FECHA: 2026-11-22T15:59:02+01:00
+COMANDO: vagrant ssh ansible -c "ansible-playbook ftp/ftp.yml --vault-password-file ./.vault_pass.txt" (vault regenerado)
+
+PLAY [Provisionar el servidor FTP] *********************************************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [negocio][0m
+
+TASK [Actualizar la lista de paquetes con tiempos acotados] ********************
+[0;32mok: [negocio][0m
+
+TASK [Instalar vsftpd y las dependencias criptográficas] ***********************
+[0;32mok: [negocio][0m
+
+TASK [Crear grupo de usuarios FTP] *********************************************
+[0;32mok: [negocio][0m
+
+TASK [Crear grupo de publicación web] ******************************************
+[0;32mok: [negocio][0m
+
+TASK [Crear usuarios FTP] ******************************************************
+[0;33mchanged: [negocio] => (item=juan)[0m
+[0;33mchanged: [negocio] => (item=ana)[0m
+
+TASK [Añadir a ana al grupo de publicación web] ********************************
+[0;32mok: [negocio][0m
+
+TASK [Preparar el document root para la publicación de ana] ********************
+[0;32mok: [negocio][0m
+
+TASK [Asignar permisos al archivo de prueba para el grupo webpublish] **********
+[0;32mok: [negocio][0m
+
+TASK [Crear directorio para los certificados] **********************************
+[0;32mok: [negocio][0m
+
+TASK [Generar clave privada RSA] ***********************************************
+[0;32mok: [negocio][0m
+
+TASK [Generar Solicitud de Firma de Certificado (CSR)] *************************
+[0;33mchanged: [negocio][0m
+
+TASK [Generar certificado X.509 autofirmado] ***********************************
+[0;32mok: [negocio][0m
+
+TASK [Crear directorio de configuración por usuario de vsftpd] *****************
+[0;32mok: [negocio][0m
+
+TASK [Fijar la raíz FTP de ana en /var/www/html] *******************************
+[0;32mok: [negocio][0m
+
+TASK [Copiar los usuarios no enjaulados] ***************************************
+[0;32mok: [negocio][0m
+
+TASK [Copiar configuración de vsftpd] ******************************************
+[0;32mok: [negocio][0m
+
+TASK [Habilitar e iniciar vsftpd] **********************************************
+[0;32mok: [negocio][0m
+
+PLAY RECAP *********************************************************************
+[0;33mnegocio[0m                    : [0;32mok=18  [0m [0;33mchanged=2   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+EXIT_CODE=0

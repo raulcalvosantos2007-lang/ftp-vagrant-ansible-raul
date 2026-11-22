@@ -1,0 +1,16 @@
+FECHA: 2026-11-22T18:12:53.2424040+01:00
+COMANDO: python3 ftp/tests/prueba_ftp.py (contraseñas por stdin, no registradas)
+Servidor conectado por nombre: ftp.raul.test
+OK   Certificado TLS con CN ftp.raul.test -> CN=ftp.raul.test,O=Practica DAW Raul
+OK   SAN incluye ftp.raul.test -> ftp.raul.test, raul.test, www.raul.test
+OK   Autenticación TLS de ana
+OK   ana accede a /var/www/html -> /var/www/html
+OK   Subida de index.html por ana -> 221 bytes
+OK   Autenticación TLS de juan
+OK   juan queda enjaulado en / -> pwd=/
+OK   juan NO puede salir de su jaula
+OK   Acceso anónimo rechazado
+OK   Conexión sin TLS rechazada
+
+Resumen: 10 correctas, 0 fallidas.
+EXIT_CODE=0

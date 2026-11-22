@@ -1,0 +1,21 @@
+FECHA: 2026-11-22T15:08:44+01:00
+COMANDO: copiar requirements.yml y reinstalar community.crypto 2.26.9
+Starting galaxy collection install process
+Process install dependency map
+|/-\|/-\|/-\|/-\Starting collection install process
+|Downloading https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/community-crypto-2.26.9.tar.gz to /home/vagrant/.ansible/tmp/ansible-local-4762nh31oix6/tmpuofkna_h/community-crypto-2.26.9-hjztmirr
+/-\|/-\|/-\|/-\|Installing 'community.crypto:2.26.9' to '/home/vagrant/.ansible/collections/ansible_collections/community/crypto'
+/-\|community.crypto:2.26.9 was installed successfully
+COMANDO: ansible-playbook --syntax-check dns/dns.yml
+
+playbook: dns/dns.yml
+EXIT_CODE=0
+COMANDO: ansible-playbook --syntax-check web/web.yml
+
+playbook: web/web.yml
+EXIT_CODE=0
+COMANDO: ansible-playbook --syntax-check ftp/ftp.yml --vault-password-file ./.vault_pass.txt
+
+playbook: ftp/ftp.yml
+EXIT_CODE=0
+TODOS LOS PLAYBOOKS PASAN SYNTAX-CHECK

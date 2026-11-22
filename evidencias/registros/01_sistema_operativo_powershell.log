@@ -1,0 +1,10 @@
+PRUEBA 1 - SISTEMA OPERATIVO Y POWERSHELL
+Fecha: 2026-11-22 12:56:25
+Comando: (Get-CimInstance Win32_OperatingSystem).Caption; (Get-CimInstance Win32_OperatingSystem).Version; $PSVersionTable.PSVersion.ToString()
+Salida:
+OS: Microsoft Windows 11 Pro
+Version OS: 10.0.26300
+PowerShell: 5.1.26100.9818
+Estado: OK
+Captura: OK - evidencias/capturas/20261122_171322-entorno_comprobaciones.png
+EXIT_CODE=0
